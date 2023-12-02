@@ -1,0 +1,62 @@
+.photos__grid {
+  display: grid;
+  grid-template-rows: 774px 746px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "first__card second__card" "third__card third__card";
+  row-gap: 50px;
+  column-gap: 60px;
+}
+.photos__item {
+  transform: scale(1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 0px white;
+}
+.photos__item__title {
+  font-family: "Lora";
+  font-size: 48px;
+  width: 30%;
+}
+.photos__item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px #000;
+}
+.photos__item:nth-child(3) {
+  background-image: url("../images/grid-bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 72px 116px 72px 116px;
+  grid-area: third__card;
+}
+.photos__item:nth-child(2) {
+  background-image: url("../images/grid-bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  grid-area: second__card;
+}
+.photos__item:nth-child(1) {
+  background-image: url("../images/grid-bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  grid-area: first__card;
+}
+.photos__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+.photos__link__button {
+  display: block;
+  background-color: black;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}

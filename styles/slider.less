@@ -1,0 +1,59 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
+  position: relative;
+  &__background {
+    background: #ededed;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+  }
+  &__buttons {
+    display: flex;
+    gap: 15px;
+  }
+  &__item {
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      font-family: "Lora";
+      font-size: 36px;
+    }
+    &__first {
+      height: 600px;
+      box-shadow: 1px 5px 10px #000;
+      background-image: url("../images/Frame\ 32.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__second {
+      height: 600px;
+      box-shadow: 1px 5px 10px #000;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://catherineasquithgallery.com/uploads/posts/2023-02/1676547181_catherineasquithgallery-com-p-kartinka-zelenii-fon-s-listochkami-172.jpg");
+    }
+    &__third {
+      height: 600px;
+      box-shadow: 1px 5px 10px #000;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://catherineasquithgallery.com/uploads/posts/2023-02/1676547197_catherineasquithgallery-com-p-kartinka-zelenii-fon-s-listochkami-111.jpg");
+    }
+  }
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 0;
+  }
+}

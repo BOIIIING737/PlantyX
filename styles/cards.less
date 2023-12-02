@@ -1,0 +1,38 @@
+.cards {
+  padding-top: 114px;
+  padding-bottom: 164px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+  }
+  &__title {
+    font-family: "Lora";
+    font-size: 48px;
+    width: 50%;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__bg {
+      background: url("../images/card__bg.png") no-repeat center/cover;
+      height: 100%;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 577px;
+    gap: 44px;
+  }
+}
